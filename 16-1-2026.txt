@@ -12,7 +12,7 @@ public class Main
 	public static void main(String[] args) {
 		Student obj = new Student();
 		obj.rollNumber = 1;
-		obj.name = "Abhishek";
+		obj.name = "Shivam";
 		
 		System.out.println(obj.rollNumber);
 		System.out.println(obj.name);
@@ -30,7 +30,7 @@ class Student {
 
     Student() {
         rollNumber = 1;
-        name = "Abhishek";
+        name = "Shivam";
     }
 }
 
@@ -62,7 +62,7 @@ class Student {
 public class Main
 {
 	public static void main(String[] args) {
-		Student obj = new Student(1,"Abhishek");
+		Student obj = new Student(1,"Shivam");
 		
 		System.out.println(obj.rollNumber);
 		System.out.println(obj.name);
