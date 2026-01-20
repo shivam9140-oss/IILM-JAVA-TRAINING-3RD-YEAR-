@@ -32,3 +32,28 @@ public class Main {
         System.out.println(ob.getbalance());
     }
 }
+abstract class vehicle{
+    abstract void start();
+}
+class car extends vehicle{
+    void start(){
+        System.out.println("car start");
+    }
+}
+class bike extends vehicle{
+    void start(){
+        System.out.println("bike is starting");
+    }
+}
+
+public class college_training {
+    public static void main(String[] args) {
+//    bankaccount ob=new bankaccount();
+//    ob.setbalance(2000);
+//        System.out.println(ob.getbalance());
+        vehicle v1=new car();
+        v1.start();
+        vehicle v2=new bike();
+        v2.start();
+    }
+}
