@@ -46,7 +46,7 @@ class bike extends vehicle{
     }
 }
 
-public class college_training {
+public class Main{
     public static void main(String[] args) {
 //    bankaccount ob=new bankaccount();
 //    ob.setbalance(2000);
