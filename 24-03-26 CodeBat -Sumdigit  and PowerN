@@ -1,0 +1,31 @@
+//sumdigit
+public int sumDigits(int n) {
+    if (n == 0) {
+        return 0;
+    }
+    return (n % 10) + sumDigits(n / 10);
+}
+
+
+//PowerN Logic first
+public int powerN(int base, int n) {
+    // Base case
+    if (n == 1) {
+        return base;
+    }
+    // Recursive case
+    return base * powerN(base, n - 1);
+}
+
+//PowerN Logic second
+public int powerN(int base, int n) {
+    if (n == 0) return 1;
+
+    int temp = powerN(base, n / 2);
+
+    if (n % 2 == 0) {
+        return temp * temp;
+    } else {
+        return base * temp * temp;
+    }
+}
