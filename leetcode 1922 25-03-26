@@ -1,0 +1,25 @@
+class Solution {
+    int MOD = 1000000007;
+
+    public int countGoodNumbers(long n) {
+        long four = n / 2;        
+        long five = (n + 1) / 2;  
+
+        long result = (fastexp(4, four) * fastexp(5, five)) % MOD;
+        return (int) result;
+    }
+
+    public long fastexp(long base, long exp) {
+        base %= MOD;
+
+        if (exp == 0) return 1;
+
+        long half = fastexp(base, exp / 2);
+
+        if (exp % 2 == 0) {
+            return (half * half) % MOD;
+        } else {
+            return ((half * half) % MOD * base) % MOD;
+        }
+    }
+}
